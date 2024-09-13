@@ -1,0 +1,100 @@
+:root{
+  --back-color: #00005b75;
+  --title-color: white;
+  --element-color: black;
+}
+body{
+  background-color: var(--back-color);
+  display: flex;
+  flex-direction:column;
+}
+h1{
+  font-family: Anton, Tahoma;
+  color: var(--title-color);
+  text-shadow: 2px 2px 2px var(--element-color);
+  text-align: center;
+  margin:0 auto;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+h3{
+  color: var(--title-color);
+  font-family: Freeman, Tahoma;
+  font-weight: 350;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.5vh;
+  padding-top:10px;
+}
+.input-div{
+  background-color: #1a1c2b;
+  width:50vw;
+  height:25vh;
+  min-width: 400px;
+  min-height: 250px;
+  max-width: 600px;
+  max-height: 300px;
+  color: lightgray;
+  border-radius: 20px;
+  margin: 25px auto;
+  box-shadow: -1px -1px 10px white;
+  display: flex;
+  flex-direction:column;
+}
+#text-input{
+  background-color:#1a1c2b;
+  border: 0px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  border-bottom: 3px solid #AAAAAAAA;
+  color: var(--title-color);
+  font-size:20px;
+  font-family: Anton, Tahoma;
+  letter-spacing: 1px;
+  text-shadow:0.5px 0.5px 1px cyan;
+}
+#text-input::active{
+  border: 0px;
+  border-bottom: 3px solid var(--back-color);
+}
+label{
+  margin: auto;
+  font-size: 28px;
+  font-family: Righteous, Tahoma;
+}
+#check-btn{
+  margin: auto;
+  margin-top:0;
+  width: 35%;
+  height: 15%;
+  border-radius: 20px;
+  font-size: 22px;
+  font-family: Righteous, Tahoma;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px black;
+}
+#check-btn:active{
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 5px white;
+}
+#result{
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  background-color: white;
+  height: 5vh;
+  width:50vw;
+  min-width: 400px;
+  min-height: 25px;
+  max-width: 600px;
+  max-height: 35px;
+  margin: auto;
+  text-align: center;
+  font-family: Righteous, Tahoma;
+  font-size: 20px;
+  color:black;
+}
+.hide{
+  display: None;
+}
