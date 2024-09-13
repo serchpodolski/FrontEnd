@@ -1,0 +1,141 @@
+:root{
+  --register-color:#2d1033;
+  --screen-color:#272e26;
+  --title-color: #b4b9f0;
+  --background-color: #5c6091;
+}
+body{
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  margin: 20 auto;
+  text-align: center;
+  font-family: "Changa", sans-serif;
+  font-size: 46px;
+  color: var(--title-color);
+  text-shadow: 2px 2px 3px #9bb898;
+}
+#register{
+  width: 85vw;
+  height: 80vh;
+  min-height: 500px;
+  min-width: 700px;
+  border: 2.5px solid black;
+  border-radius: 15px;
+  margin: auto;
+  background-color: var(--register-color);
+  display:grid;
+  grid-template-columns: [one] 5% [two] 42% [three] 6% [four] 42% [five] auto [end];
+  grid-template-rows: [one] 5% [two] 90% [three] auto [end];
+}
+#register-screen{
+  grid-column-start: two;
+  grid-column-end: three;
+  grid-row-start: two;
+  grid-row-end: three;
+  background-color: var(--screen-color);
+  top: 0;
+  border-radius: 5px;
+  border: 2.5px solid silver;
+  display: grid;
+  grid-template-rows: [start] 2.5% [one] 50% [two] 15% [three] 15% [four] 15% [five] auto [end];
+}
+#change-due{
+  grid-row-start: one;
+  grid-row-end: two;
+}
+#paid-by-customer{
+  grid-row-start: three;
+  grid-row-end: four;
+  display: inline-block;
+}
+#price-div{
+  grid-row-start: two;
+  grid-row-end: three;
+  color: silver;
+  text-align: left;
+  margin-left:5px;
+  font-family: "Jersey 15";
+  text-shadow: 1px 1px 1px black;
+  font-size: 22px;
+  display: inline-block;
+}
+#price-div p{
+  display: inline-block;
+}
+label{
+  text-align: center;
+  font-family: "Jersey 15";
+  font-size: 22px;
+  color: silver;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 5px;
+}
+#cash{
+  height: 30px;
+  width: 60%;
+  /* margin: 5 auto; */
+  margin-left: 10px;
+  background-color: var(--screen-color);
+  border-radius: 10px;
+  color: silver;
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-size:26px;
+  text-align:center;
+}
+#cash-totals{
+  grid-column-start: four;
+  grid-column-end: five;
+  grid-row-start: two;
+  grid-row-end: three;
+  border-radius: 5px;
+  border: 2.5px solid silver;
+  background-color: var(--screen-color);
+}
+#purchase-btn{
+  grid-row-start: four;
+  grid-row-end: five;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: black;
+  color: silver;
+  font-family: "Jersey 15";
+  font-size: 22px;
+  box-shadow: 5px 5px 5px var(--background-color) inset,
+              -5px -5px 5px var(--background-color) inset;
+}
+#cash-totals{
+  display: flex;
+  flex-direction: column;
+  font-family: "Jersey 25 Charted", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 100;
+  text-shadow: 5px 5px 5px green;
+}
+#cash-totals p{
+  padding:0;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 9px;
+  font-size: 2.25em;
+}
+#change-due{
+  display: flex;
+  flex-direction: column;
+  font-family: "Jersey 25 Charted", sans-serif;
+  color: white;
+  text-shadow: 5px 5px 5px green;
+  font-size: 1.4em;
+  position: relative;
+  top:-5px;
+}
+#change-due p{
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+  margin-left: 5px;
+}
