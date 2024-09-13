@@ -1,0 +1,142 @@
+:root{
+  --main-back: #382d104F;
+  --display:#8cbdBD;
+  --phone-text: #364040;
+  --titles: #6e5673;
+  --lens-color: #456e65;
+  --inner-lens: #456;
+  --warning:#691c37AA;
+}
+body{
+  background-color: var(--main-back);
+  display: flex;
+  flex-direction: column;
+  margin:10px auto;
+}
+h1{
+  margin: auto;
+  font-family:"Jersey 15";
+  font-size:36px;
+  font-weight: 600;
+  color: var(--titles);
+  text-shadow: 1px 1px 3px darkgray;
+  padding-top:25px;
+}
+#phone-frame{
+  background-color:black;
+  width:300px;
+  height:600px;
+  margin: 25px auto;
+  border-radius:15px;
+}
+#front{
+  background-color: var(--lens-color);
+  margin:auto;
+  width: 30px;
+  height:30px;
+  z-index:2;
+  margin-top: 10px;
+  border-radius:30px;
+}
+#inner-lens{
+  background-color:var(--inner-lens);
+  width: 75%;
+  height:75%;
+  z-index:3;
+  margin: auto;
+  position:relative;
+  top: 3.5px;
+  left:0.5px;
+  border-radius:24px;
+}
+#phone-display{
+  background-color:var(--display);
+  width:95%;
+  height:83%;
+  margin: 0 auto;
+  border-radius: 3px;
+  position: relative;
+  top: -8px;
+  overflow:clip;
+}
+#buttons-div{
+  margin:auto;
+  position:relative;
+  display: inline-block;
+  width:95%;
+  height:10%;
+  top: 1%;
+  left: 22%;
+}
+button{
+  width: 30%;
+  height: 40%;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 4px var(--inner-lens),
+              inset -3px -3px 1px var(--inner-lens);
+  background-color: var(--main-back);
+  color:var(--titles);
+  font-family: "Jersey 15";
+  font-weight: 600;
+  font-size:16px;
+  cursor: pointer;
+}
+h3{
+  font-family: "Changa";
+  margin: 18px auto;
+  position:relative;
+  text-align:center;
+  font-size:24px;
+  color:var(--phone-text);
+  text-shadow: 1px 1px var(--main-back);
+}
+input{
+
+  padding: 0;
+  position: relative;
+  margin: 0px auto;
+  width: 75%;
+  height: 7.5%;
+  left:12.5%;
+  top: -3%;
+  border-radius: 5px;
+  border: 3px solid var(--inner-lens);
+  font-family:"Changa";
+  text-align: center;
+  font-size:18px;
+  font-weight: 500;
+  color:var(--phone-text);
+  text-shadow: 1px 1px var(--main-back);
+}
+#results-div{
+  height: 380px;
+  /* overflow-y:hidden; */
+  font-family: "Changa";
+  font-size:14px;
+  font-weight:500;
+  padding-left:10px;
+}
+strong{
+  font-size:20px;
+  font-weight:700;
+}
+.hidden{
+  display:none;
+}
+
+.invalid{
+  color: var(--warning);
+  text-shadow: 1px 1px #a15645;
+}
+#results-div::-webkit-scrollbar {
+    width: 5px;
+}
+#results-div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+#results-div::-webkit-scrollbar-thumb {
+  background-color: var(--lens-color);
+  border-radius:5px;
+  /* outline: 1px solid slategrey; */
+}
